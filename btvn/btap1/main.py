@@ -26,8 +26,8 @@ for n in [1000, 10000, 100000]:
     nx = ""
     time1 = timeit.timeit(lambda: cach1(), number=1)
     time2 = timeit.timeit(lambda: cach2(), number=1)
-    if (time1 > time2): nx = f"Khi n = {n}, cach1 cham hon cach2 {time1 - time2} giay"
-    elif (time1 < time2): nx = f"Khi n = {n}, cach1 nhanh hon cach2 {time2 - time1} giay"
+    if (time1 > time2): nx = f"cach1 cham hon cach2 {time1 - time2} giay"
+    elif (time1 < time2): nx = f"cach1 nhanh hon cach2 {time2 - time1} giay"
     ws.append([n, time1, time2, nx])
 print("Xong")
 
